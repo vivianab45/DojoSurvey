@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <title>Results</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-decoration-underline">Submitted Info</h1>
+        <div class="row">
+            <h4 class="col-sm-2">Name:</h4>
+            <p class="col-sm-9">@ViewBag.Name</p>
+        </div>
+        <div class="row">
+            <h4 class="col-sm-2">Dojo Location:</h4>
+            <p class="col-sm-9"> @ViewBag.Location</p>
+        </div>
+        <div class="row">
+            <h4 class="col-sm-2">Favorite Language</h4>
+            <p class="col-sm-9">@ViewBag.Language</p>
+        </div>
+        <div class="row">
+            <h4 class="col-sm-2">Comment</h4>
+            <p class="col-sm-9">@ViewBag.Comment</p>
+        </div>
+        <a href="/"><button  class="btn btn-success float-end">Back to Survey</button></a>
+    </div> 
+</body>
+</html>

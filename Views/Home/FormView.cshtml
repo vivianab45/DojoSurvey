@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1 class= "text-center"> Dojo Survey Form</h1>
+    <div class="container">
+        <form action="process" method="post">
+          <div class="form-group">
+        <label for="exampleFormControlInput1">Your Name: </label>
+        <input type="text" name="Name" class="form-control" id="name" >
+          </div>
+          <div class="form-group">
+        <label for="exampleFormControlSelect1">Dojo Location:</label>
+        <select class="form-control" name="Location" id="location">
+        <option selected>Choose...</option>
+          <option>San Jose</option>
+          <option>Dallas</option>
+          <option>Miami</option>
+          <option>Monterey</option>
+        </select>
+          </div>
+        <div class="form-group">
+        <label for="exampleFormControlSelect1">Favorite Language:</label>
+        <select class="form-control" name="Language" id="language">
+          <option selected>Choose...</option>
+          <option>C#</option>
+          <option>JAVASCRIPT</option>
+          <option>PYTHON</option>
+          <option>JAVA</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comment (optional)</label>
+        <textarea class="form-control" name="Comment" id="comment" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary float-end">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
